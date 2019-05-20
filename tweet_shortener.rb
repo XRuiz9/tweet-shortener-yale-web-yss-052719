@@ -16,16 +16,16 @@ end
 def word_substituter (string)
   dictionary
   keys = dictionary.keys
-
+  newTweet = []
   splat = string.split(" ")
-  splat = splat.collect do |word|
+  splat = splat.each do |word|
     if keys.include?(word)
-      word = dictionary[word]
+      newTweet << dictionary[word]
     else
-      word
+      newTweet << word
     end
   end
-  splat.join(" ")
+  newTweet.join(" ")
 end
 
 def bulk_tweet_shortener(array)
