@@ -10,3 +10,13 @@ def dictionary
     "and" => "&"
   }
 end
+
+def word_substituter (string)
+  dictionary
+  keys = dictionary.keys
+  
+  splat = string.split(" ")
+  splat.each do |word|
+    if keys.include?(word)
+      word = dictionary["#{word}"]
+      
