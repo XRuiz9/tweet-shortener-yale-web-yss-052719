@@ -11,6 +11,7 @@ def dictionary (word)
   }
   if dictionary.keys.include?(word)
     dictionary[word]
+  end
 end
 
 def word_substituter (string)
