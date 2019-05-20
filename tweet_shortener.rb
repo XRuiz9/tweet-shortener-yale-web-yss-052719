@@ -21,7 +21,7 @@ def word_substituter (string)
 
   splat = string.split(" ")
   splat.each do |word|
-    word = 
+    word =
   end
   string = splat.join(" ")
   string
