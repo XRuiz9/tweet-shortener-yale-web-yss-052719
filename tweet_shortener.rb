@@ -25,3 +25,9 @@ def word_substituter (string)
   end
   splat.join(" ")
 end
+
+def bulk_tweet_shortener(array)
+  array.collect do |tweet|
+    word_substituter(tweet)
+  end
+end
