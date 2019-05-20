@@ -1,4 +1,4 @@
-def dictionary (word)
+def dictionary
   dictionary = {
     "hello" => "hi",
     "to" => "2",
@@ -9,10 +9,6 @@ def dictionary (word)
     "at" => "@",
     "and" => "&"
   }
-  if dictionary.keys.include?(word)
-    word = dictionary[word]
-  end
-  word
 end
 
 def word_substituter (string)
@@ -21,7 +17,9 @@ def word_substituter (string)
 
   splat = string.split(" ")
   splat.each do |word|
-    word = dictionary(word)
+    if keys.include?(word)
+      word = dictionary[word]
+    end
   end
   string = splat.join(" ")
   string
