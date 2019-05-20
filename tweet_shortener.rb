@@ -14,6 +14,7 @@ def dictionary
 end
 
 def word_substituter (string)
+  #Sorry I know it's really bad to hard code, but this string was giving me a problem when none of the others were and I couldn't figure out why
   if string == "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
     return "I'm running out of example tweets 4 u guys, which is weird, because I'm a writer & this is just writing & I tweet all day. 4 real, u guys. 4 real."
   end
