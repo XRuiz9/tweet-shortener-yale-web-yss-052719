@@ -18,9 +18,9 @@ def word_substituter (string)
   keys = dictionary.keys
 
   splat = string.split(" ")
-  splat = splat.collect do |word|
+  splat = splat.each do |word|
     if keys.include?(word)
-      word = dictionary[weachord]
+      word = dictionary[word]
     else
       word
     end
