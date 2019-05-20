@@ -19,5 +19,6 @@ def word_substituter (string)
   splat = splat.collect do |word|
     word = "hi"
   end
+  splat.join(" ")
 
 end
