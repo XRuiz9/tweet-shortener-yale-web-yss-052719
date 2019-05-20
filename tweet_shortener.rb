@@ -16,7 +16,7 @@ def word_substituter (string)
   keys = dictionary.keys
 
   splat = string.split(" ")
-  splat.each do |word|
+  splat.coectxs do |word|
     word = "hi"
   end
   splat.join(" ")
