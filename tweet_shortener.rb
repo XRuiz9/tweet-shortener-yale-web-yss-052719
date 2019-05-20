@@ -21,5 +21,6 @@ def word_substituter (string)
       word = dictionary["#{word}"]
     end
   end
+  string = splat.join(" ")
   string
 end
