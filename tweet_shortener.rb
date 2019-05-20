@@ -24,5 +24,4 @@ def word_substituter (string)
     end
   end
   splat.join(" ")
-
 end
