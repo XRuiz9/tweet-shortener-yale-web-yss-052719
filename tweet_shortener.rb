@@ -1,4 +1,4 @@
-def dictionary
+def dictionary (word)
   dictionary = {
     "hello" => "hi",
     "to" => "2",
@@ -9,6 +9,8 @@ def dictionary
     "at" => "@",
     "and" => "&"
   }
+  if dictionary.keys.include?(word)
+    dictionary[word]
 end
 
 def word_substituter (string)
