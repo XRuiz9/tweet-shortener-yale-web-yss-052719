@@ -19,4 +19,5 @@ def word_substituter (string)
   splat.collect do |word|
     word = "hi"
   end
+  splat
 end
