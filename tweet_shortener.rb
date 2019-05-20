@@ -19,3 +19,6 @@ def word_substituter (string)
   splat.each do |word|
     if keys.include?(word)
       word = dictionary["#{word}"]
+    end
+  end
+end
