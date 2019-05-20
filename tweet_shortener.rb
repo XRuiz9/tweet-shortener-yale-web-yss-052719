@@ -19,6 +19,8 @@ def word_substituter (string)
   splat = splat.collect do |word|
     if keys.include?(word)
       word = dictionary[word]
+    else
+      word
     end
   end
   splat.join(" ")
