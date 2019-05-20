@@ -20,7 +20,7 @@ def word_substituter (string)
   splat = string.split(" ")
   splat = splat.collect do |word|
     if keys.include?(word)
-      word = dictionary[word]
+      word = dictionary[weachord]
     else
       word
     end
